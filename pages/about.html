@@ -4,98 +4,75 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>AIA Contacts</title>
-  <!-- materialize icons, css & js -->
-  <link type="text/css" href="../css/materialize.min.css" rel="stylesheet">
+  <!-- Materialize CSS & JS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link type="text/css" href="../css/styles.css" rel="stylesheet">
-  <script type="text/javascript" src="../js/materialize.min.js"></script>
-  
+  <style>
+    body {
+      background-color: #f0f0f0;
+      font-family: 'Arial', sans-serif;
+    }
+    .custom-background {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 8px;
+    }
+  </style>
 </head>
-<body class="custom-background">
+<body>
 
-  <!-- top nav -->
-  <nav class="z-depth-0">
-    <div class="nav-wrapper container">
-      <span class="left grey-text text-darken-1">
-        <i class="material-icons sidenav-trigger" data-target="side-menu">menu</i>
-      </span>
-      <a class="right" href="/">AIA<span>Contacts</span></a>
+  <!-- Navbar -->
+  <nav class="nav-wrapper blue">
+    <div class="container">
+      <a href="/" class="brand-logo">AIA<span>Contacts</span></a>
     </div>
   </nav>
 
-  <!-- side nav -->
-  <ul id="side-menu" class="sidenav side-menu">
-    <li><a class="subheader">AIACONTACT</a></li>
+  <!-- Side Navigation -->
+  <ul id="side-menu" class="sidenav">
     <li><a href="/" class="waves-effect">Home</a></li>
     <li><a href="about.html" class="waves-effect">About</a></li>
   </ul>
 
-  <!-- content -->
-  <div class="container grey-text">
-    <h5 class="center">About AIA Contacts</h5>
-    <p class="flow-text">Welcome to <strong>AIA Contacts</strong>! We are committed to providing a seamless contact management experience that allows you to stay connected with ease. Whether you're organizing personal contacts or managing professional relationships, our platform ensures you never lose touch with what's important.</p>
+  <!-- Content -->
+  <div class="container">
+    <div class="row custom-background">
+      <div class="col s12">
+        <h5 class="center">About AIA Contacts</h5>
+        <p class="flow-text">AIA Contacts is designed to make contact management simple and efficient. Whether you're managing personal connections or professional relationships, our platform makes it easy to stay connected.</p>
 
-    <div class="section">
-      <h6>Our Mission</h6>
-      <p>AIA Contacts aims to simplify the way you manage your connections. With a clean, user-friendly interface and powerful features, we strive to help you stay on top of your communication and never miss an important conversation. From saving contact details to organizing them into categories, we provide a one-stop solution for all your contact management needs.</p>
-    </div>
-
-    <div class="divider"></div>
-
-    <div class="section">
-      <h6>Features</h6>
-      <ul class="collection">
-        <li class="collection-item"><i class="material-icons left">check_circle</i><strong>Easy-to-Use Interface</strong>: A simple, intuitive design that makes managing your contacts quick and efficient.</li>
-        <li class="collection-item"><i class="material-icons left">check_circle</i><strong>Search and Filter</strong>: Quickly find and organize your contacts with powerful search and filter functionality.</li>
-        <li class="collection-item"><i class="material-icons left">check_circle</i><strong>Sync Across Devices</strong>: Stay up-to-date by syncing your contacts across multiple devices in real-time.</li>
-        <li class="collection-item"><i class="material-icons left">check_circle</i><strong>Category Management</strong>: Group contacts by categories such as "Family", "Work", "Friends" for easy access.</li>
-        <li class="collection-item"><i class="material-icons left">check_circle</i><strong>Backup and Restore</strong>: Keep your contact information safe with our cloud-based backup and restore options.</li>
-      </ul>
-    </div>
-
-    <div class="divider"></div>
-
-    <div class="section">
-      <h6>Why Choose AIA Contacts?</h6>
-      <p>We understand that managing contacts can be overwhelming, which is why we've created a solution that simplifies the process. Whether you're a business professional or someone who wants to stay connected with family and friends, AIA Contacts is the perfect tool to help you organize, track, and never miss a connection.</p>
-    </div>
-
-    <div class="divider"></div>
-
-    <div class="section">
-      <h6>Get Started Today</h6>
-      <p>Ready to take control of your contacts? Sign up today and experience the difference AIA Contacts can make in your digital communication life!</p>
-      <a href="/" class="btn-large waves-effect waves-light blue darken-2">Start Now</a>
-    </div>
-
-  </div>
-
-  <!-- footer -->
-  <footer class="page-footer blue darken-2">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">AIA Contacts</h5>
-          <p class="grey-text text-lighten-4">Your one-stop solution for efficient and seamless contact management. Stay connected, stay organized!</p>
+        <div class="section">
+          <h6>Our Mission</h6>
+          <p>We aim to provide an intuitive platform that helps you manage contacts effortlessly. Our goal is to make sure that staying in touch with important people is quick, simple, and organized.</p>
         </div>
-        <div class="col l4 offset-l2 s12">
-          <h5 class="white-text">Links</h5>
+
+        <div class="section">
+          <h6>Features</h6>
           <ul>
-            <li><a href="/" class="grey-text text-lighten-3">Home</a></li>
-            <li><a href="about.html" class="grey-text text-lighten-3">About</a></li>
-            <li><a href="#!" class="grey-text text-lighten-3">Support</a></li>
+            <li>Easy-to-use interface</li>
+            <li>Powerful search and filtering options</li>
+            <li>Sync across all your devices</li>
+            <li>Organize contacts into categories</li>
+            <li>Cloud backup and restore</li>
           </ul>
         </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-        © 2025 AIA Contacts. All rights reserved.
-        <a class="grey-text text-lighten-4 right" href="#!">Privacy Policy</a>
-      </div>
-    </div>
-  </footer>
 
-  <script src="../js/common.js"></script>
+        <div class="section">
+          <h6>Get Started Today</h6>
+          <p>Join us and experience a smarter way to manage your contacts. Sign up now!</p>
+          <a href="/" class="btn blue">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Materialize JS -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const sidenav = document.querySelectorAll('.sidenav');
+      M.Sidenav.init(sidenav);
+    });
+  </script>
 </body>
 </html>
