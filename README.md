@@ -36,6 +36,8 @@ AIA Contacts is a contact management web application built with HTML, CSS, and J
     - **Add Contact View**: Allows users to add a new contact with name, phone number, email, etc.
     - 
 5. ## AIA Contacts - Screenshot
+   
+![image](https://github.com/user-attachments/assets/cac400f2-bd85-4681-9047-f96981f76283)
 
 ![image](https://github.com/user-attachments/assets/68be9707-a4ac-4a47-8928-c2724649730c)
 
@@ -43,7 +45,6 @@ AIA Contacts is a contact management web application built with HTML, CSS, and J
 
 ![image](https://github.com/user-attachments/assets/d3fe73cc-1ca1-42e9-9ed5-037f91292852)
 
-![image](https://github.com/user-attachments/assets/cac400f2-bd85-4681-9047-f96981f76283)
 
 
 **NETLIFY**
