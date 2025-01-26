@@ -1,11 +1,11 @@
 /* colours */
 :root{
-  --primary: #ffedd8;  /* бежевый */
-  --secondary: #d4a276;  /* коричневый */
-  --title: #6f4518;  /* темный коричневый */
+  --primary: #e7bc91; 
+  --secondary: #a47148; 
+  --title: #6f4518;  
 }
 .custom-background {
-  background-color: #f8f9fa;
+  background-color: #fdeed9;
 }
 
 
