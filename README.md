@@ -43,3 +43,5 @@ To run the AIA Contacts app locally, follow these steps:
    ```bash
    git clone https://github.com/your-username/aia-contacts.git
 
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/00db18a2-1b68-4d05-8beb-9741daeaba80/deploy-status)](https://app.netlify.com/sites/pwa-aiacontact/deploys)
