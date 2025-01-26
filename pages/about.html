@@ -5,14 +5,29 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>AIA Contacts</title>
   <!-- Materialize CSS & JS -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <link type="text/css" href="../css/materialize.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" href="../css/styles.css" rel="stylesheet">
+  <script type="text/javascript" src="../js/materialize.min.js"></script>
+
   <style>
-    body {
-      background-color: #f0f0f0;
-      font-family: 'Arial', sans-serif;
+    /* Adjust text sizes for readability */
+    h5 {
+      font-size: 2.2rem; /* Increase size of the main heading */
     }
+
+    h6 {
+      font-size: 1.6rem; /* Heading size for sections */
+    }
+
+    p {
+      font-size: 1.1rem; /* Text size for paragraphs */
+    }
+
+    .flow-text {
+      font-size: 1.2rem; /* Larger intro text */
+    }
+
     .custom-background {
       background-color: #fff;
       padding: 40px;
@@ -20,59 +35,39 @@
     }
   </style>
 </head>
-<body>
+<body class="custom-background">
 
-  <!-- Navbar -->
-  <nav class="nav-wrapper blue">
-    <div class="container">
-      <a href="/" class="brand-logo">AIA<span>Contacts</span></a>
+  <!-- Top Navigation -->
+  <nav class="z-depth-0">
+    <div class="nav-wrapper container">
+      <span class="left grey-text text-darken-1">
+        <i class="material-icons sidenav-trigger" data-target="side-menu">menu</i>
+      </span>
+      <a class="right" href="/">AIA<span>Contacts</span></a>
     </div>
   </nav>
 
   <!-- Side Navigation -->
-  <ul id="side-menu" class="sidenav">
+  <ul id="side-menu" class="sidenav side-menu">
+    <li><a class="subheader">AIACONTACT</a></li>
     <li><a href="/" class="waves-effect">Home</a></li>
     <li><a href="about.html" class="waves-effect">About</a></li>
   </ul>
 
   <!-- Content -->
-  <div class="container">
-    <div class="row custom-background">
-      <div class="col s12">
-        <h5 class="center">About AIA Contacts</h5>
-        <p class="flow-text">AIA Contacts is designed to make contact management simple and efficient. Whether you're managing personal connections or professional relationships, our platform makes it easy to stay connected.</p>
+  <div class="container grey-text">
+    <h5 class="center">About AIA Contacts</h5>
+    <p class="flow-text">Welcome to <strong>AIA Contacts</strong>! We are committed to providing a seamless contact management experience that allows you to stay connected with ease. Whether you're organizing personal contacts or managing professional relationships, our platform ensures you never lose touch with what's important.</p>
 
-        <div class="section">
-          <h6>Our Mission</h6>
-          <p>We aim to provide an intuitive platform that helps you manage contacts effortlessly. Our goal is to make sure that staying in touch with important people is quick, simple, and organized.</p>
-        </div>
-
-        <div class="section">
-          <h6>Features</h6>
-          <ul>
-            <li>Easy-to-use interface</li>
-            <li>Powerful search and filtering options</li>
-            <li>Sync across all your devices</li>
-            <li>Organize contacts into categories</li>
-            <li>Cloud backup and restore</li>
-          </ul>
-        </div>
-
-        <div class="section">
-          <h6>Get Started Today</h6>
-          <p>Join us and experience a smarter way to manage your contacts. Sign up now!</p>
-          <a href="/" class="btn blue">Get Started</a>
-        </div>
-      </div>
+    <div class="section">
+      <h6>Our Mission</h6>
+      <p>AIA Contacts aims to simplify the way you manage your connections. With a clean, user-friendly interface and powerful features, we strive to help you stay on top of your communication and never miss an important conversation. From saving contact details to organizing them into categories, we provide a one-stop solution for all your contact management needs.</p>
     </div>
+
+    <div class="divider"></div>
+
   </div>
 
-  <!-- Materialize JS -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const sidenav = document.querySelectorAll('.sidenav');
-      M.Sidenav.init(sidenav);
-    });
-  </script>
+  <script src="../js/common.js"></script>
 </body>
 </html>
