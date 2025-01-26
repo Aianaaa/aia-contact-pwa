@@ -35,9 +35,15 @@ AIA Contacts is a contact management web application built with HTML, CSS, and J
     - **Contact Detail View**: Shows detailed information about a specific contact and allows the user to edit or delete the contact.
     - **Add Contact View**: Allows users to add a new contact with name, phone number, email, etc.
 
-## Installation
 **NETLIFY**
 [![Netlify Status](https://api.netlify.com/api/v1/badges/00db18a2-1b68-4d05-8beb-9741daeaba80/deploy-status)](https://app.netlify.com/sites/pwa-aiacontact/deploys)
+
+## Live Demo
+You can try the live demo of the application here:
+
+[AIA Contacts Live Demo](https://pwa-aiacontact.netlify.app/)
+
+## Installation
 
 To run the AIA Contacts app locally, follow these steps:
 
