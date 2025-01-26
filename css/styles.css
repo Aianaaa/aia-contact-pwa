@@ -4,6 +4,11 @@
   --secondary: #d4a276;  /* коричневый */
   --title: #6f4518;  /* темный коричневый */
 }
+body {
+  background-color: var(--primary);  /* бежевый фон для всего сайта */
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
 
 /* layout styles */
 nav{
