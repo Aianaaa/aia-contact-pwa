@@ -16,7 +16,7 @@ const assets = [
     'pages/default.html'
 ];
 
-//cache size limit function
+// Cache size limit function
 const limitCacheSize = (name, size) => {
     caches.open(name).then(cache => {
         cache.keys().then(keys => {
@@ -27,7 +27,7 @@ const limitCacheSize = (name, size) => {
     })
 }
 
-//install sw
+// Install SW
 self.addEventListener('install', evt => {
     // console.log('service worker has been installed.');
     evt.waitUntil(
@@ -37,7 +37,7 @@ self.addEventListener('install', evt => {
     );  
 });
 
-//activate sw
+// Activate SW
 self.addEventListener('activate', evt => {
     // console.log('service worker has been activated.');
     evt.waitUntil(
@@ -45,13 +45,13 @@ self.addEventListener('activate', evt => {
             // console.log(keys)
             return Promise.all(keys
                 .filter(key => key !== cacheName)
-                .map(key => caches.delete())
+                .map(key => caches.delete(key)) // Added correct delete key logic
             )
         })
     )
-})
+});
 
-//fetch event
+// Fetch event
 self.addEventListener('fetch', evt => {
     console.log(evt);
 
@@ -59,7 +59,7 @@ self.addEventListener('fetch', evt => {
         caches.match(evt.request).then(cacheRes => {
             return cacheRes || fetch(evt.request).then(fetchRes => {
                 return caches.open(dynamicCacheName).then(cache => {
-                    cache.put(evt.request.url, fetchRes.clone())
+                    cache.put(evt.request.url, fetchRes.clone());
                     limitCacheSize(dynamicCacheName, 5);
                     return fetchRes;
                 })
@@ -70,4 +70,28 @@ self.addEventListener('fetch', evt => {
             }
         })
     );
-})
+});
+
+// Push event
+self.addEventListener("push", (event) => {
+  const data = event.data.json();
+  const title = data.title;
+  const options = {
+    body: data.body,
+    icon: data.icon,
+    badge: data.badge,
+  };
+
+  event.waitUntil(
+    self.registration.showNotification(title, options)
+  );
+});
+
+// Notification click event
+self.addEventListener("notificationclick", (event) => {
+  event.notification.close();
+  // Logic for handling notification click (e.g., navigate to a page)
+  event.waitUntil(
+    clients.openWindow('https://yourwebsite.com') // Example link
+  );
+});
